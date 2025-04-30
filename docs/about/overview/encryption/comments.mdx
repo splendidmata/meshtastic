@@ -1,24 +1,23 @@
 ---
-id: comments
-title: Comments on Meshtastic's Encryption
-sidebar_label: Comments
+id: 评论
+title: 关于 Meshtastic 的加密的评论
+sidebar_label: 评论
 sidebar_position: 2
-description: "Explore community insights and expert opinions on Meshtastic's encryption, including AES256 implementation, security tips, and potential vulnerabilities."
+description: "探索社区对 Meshtastic 加密的见解和专家意见，包括 AES256 实现、安全提示和潜在漏洞。"
 ---
 
 import QRCode from "@site/docs/blocks/_qr-code.mdx";
 
-This page compiles community feedback and expert reviews on Meshtastic's encryption approach. We value these insights and aim to improve our encryption implementation where feasible. Explore key details, practical tips, and understand the strengths and potential limitations of Meshtastic's AES256 encryption.
-
+本页汇集了社区对 Meshtastic 加密方法的反馈意见和专家评论。我们重视这些意见，并致力于在可行的情况下改进我们的加密实现。探索关键细节和实用技巧，了解 Meshtastic AES256 加密的优势和潜在局限。
 ## Comments
 
-Cryptography is tricky, so we've tried to 'simply' apply standard crypto solutions to our implementation. However, the project developers are not cryptography experts.
+密码学非常棘手，因此我们尝试 “简单 ”地将标准密码解决方案应用到我们的实施中。不过，项目开发人员并非密码学专家。
 
-Based on comments from reviewers (see below), here are some tips for using these radios, so that you may know the level of protection offered:
+根据评论者的意见（见下文），以下是使用这些无线电的一些提示，以便您了解所提供的保护级别：
 
-- It is likely that the AES256 security is implemented 'correctly' and an observer will not be able to decode your messages.
-- **Warning:** If an attacker is able to get one of the radios in their possession, they could either a) extract the channel key from that device, or b) use that radio to listen to new communications.
-- **Warning:** If an attacker is able to get the "Channel QR[^1] code/URL" that you share with others, that attacker could then be able to read any messages sent on the channel (either tomorrow or in the past - if they kept a raw copy of those broadcast packets).
+- AES256 安全措施很可能是 “正确 ”实施的，旁观者无法解码您的信息。
+- **警告:** 如果攻击者掌握了其中一台无线电设备，他们可以 a) 从该设备中提取信道密钥，或 b) 使用该无线电设备监听新的通信。
+- **警告:** 如果攻击者能够获取您与他人共享的 “频道 QR[^1] 代码/URL”，那么攻击者就可以读取在该频道上发送的任何信息（无论是明天还是过去--如果他们保留了这些广播数据包的原始副本）。
 
 [^1]:
     <QRCode />
